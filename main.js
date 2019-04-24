@@ -6,7 +6,7 @@ bot.on('message', async message => {
 
 
   let msg = message.content.toUpperCase();
-  let prefix = 'a!';
+  let prefix = '_c';
   let sender = message.author;
   const args = message.content.slice(prefix.length).split(/ +/g)
   const command = args.shift().toLowerCase()
@@ -29,13 +29,13 @@ bot.on('ready', () => {
 
 
   var status = [
-    `a!help || ${bot.guilds.size} Guilds`,
-    `a!help || ${bot.users.size} User`,
-    `a!help || ${bot.emojis.size} Emojis`,
-    `a!help || ${bot.channels.size} Channels`,
-    `a!help || Playing with ${bot.users.size} User`,
-    `Beep Boop Beep || a!help`,
-    `Make a!help :D`];
+    `Digunakan ${bot.guilds.size} Server`,
+    `Total ${bot.users.size} Member`,
+    `Total ${bot.emojis.size} Emoji`,
+    `Total ${bot.channels.size} Channel`,
+    `Total Pendukung ${bot.users.size}`,
+    `Ansel Official`,
+    `_c`];
 
   console.log(`Eingeloggt als ${bot.user.tag} und ist auf ${bot.guilds.size} Server`)
 
@@ -47,4 +47,4 @@ bot.on('ready', () => {
     }, 5000);
 });
 
-bot.login("YOUR TOKEN");
+bot.login("NTYxOTgzMzg4ODY1NjU4ODgw.XMCSUg.SUdyBt2w91Bno3WGSbePaIa9iwc");
